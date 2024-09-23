@@ -23,7 +23,7 @@ function showResult() {
             result.innerHTML = `في سنة ${year}، لم يتم تسجيل أي إنجاز محدد لهذه السنة في البيانات المتاحة.`;
         }
     } else {
-        result.innerHTML = "الرجاء إدخال سنة صحيحة بين 1900 و 2024.";
+        result.innerHTML = "الرجاء إدخال سنة صحيحة بين 2015 و 2024.";
     }
     result.classList.add("fade-in");
     setTimeout(() => {
