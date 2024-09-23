@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Cairo', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("bak1.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  animation: fadeIn 1.5s ease-in-out;
+}
+.logo {
+  display: block;
+  margin: 0 auto; 
+  max-width: 80px; 
+  height: auto; 
+  margin-bottom: 20px; 
+}
+h1 {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  color: #228B22;
+  margin-top: 10vh;
+}
+
+.input-section {
+  margin-top: 20px;
+}
+
+.input-section p {
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  color: #555;
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+input[type="number"] {
+  padding: clamp(8px, 2vw, 10px);
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  border: 2px solid #228B22;
+  border-radius: 8px;
+  width: 70%;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: clamp(8px, 2vw, 10px);
+  background-color: #228B22;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  width: 20%;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #006400;
+}
+
+.result-box {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 2px solid #228B22;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+.social-icons {
+  position: fixed;
+  bottom: clamp(5px, 2vw, 20px);
+  right: clamp(5px, 2vw, 20px);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.social-icons a {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: #228B22;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.social-icons a:hover,
+.social-icons .linkedin:hover {
+  color: #006400;
+}
+
+.social-icons a:hover,
+.social-icons .whatsapp:hover {
+  color: #25D366;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (max-height: 700px) {
+  .container {
+      margin: 1rem auto;
+  }
+  .logo {
+      top: -5vh;
+      width: 8vw;
+  }
+  h1 {
+      margin-top: 5vh;
+  }
+}

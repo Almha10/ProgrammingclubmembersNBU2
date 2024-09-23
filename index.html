@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اليوم الوطني السعودي 94</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <main class="container">
+        <header class="headertop">
+            <img src="logo.jpeg" alt="Logo" class="logo">
+            <h1>اليوم الوطني السعودي 94</h1>
+        </header>
+        <section class="input-section">
+            <p> اهم انجازات المملكة العربية السعودية من بداية سنة 2015 الى 2024</p>
+            <div class="input-box">
+                <input type="number" id="year-input" placeholder="مثال: 2020" min="2015" max="2024" aria-label="أختر السنة">
+                <button onclick="showResult()" aria-label="عرض النتيجة">عرض</button>
+            </div>
+            <div id="result" class="result-box" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
